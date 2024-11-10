@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: orangered;
+  color: white;
+  padding: 15px 0px;
+}
+
+header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: cursive;
+}
+
+header button {
+  padding: 10px 8px;
+  background: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  padding: 10px;
+  gap: 3px;
+}
+
+.employee-list {
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.employee-list ul {
+  padding: 20px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+}
+
+.singal-employee {
+  padding: 10px 20px;
+  border: 3px;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.singal-employee i {
+  cursor: pointer;
+  background: red;
+  color: aliceblue;
+  padding: 4px 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.singal-employee i:hover {
+  background-color: black;
+}
+
+.singal-employee:hover,
+.selected {
+  background: rgba(75, 75, 75, 0.488);
+}
+
+.head {
+  background: orangered;
+  color: white;
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.employee-info {
+  width: 70%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.employee-info .employee-info-box {
+  padding: 20px 30px;
+}
