@@ -17,7 +17,7 @@
     <div id="app">
       <header>
         <h2>Employee Database Management</h2>
-        <button>Add Employee</button>
+        <button class="createEmployeeButton">Add Employee</button>
       </header>
       <main>
         <div class="employee-list">
@@ -26,11 +26,69 @@
         </div>
         <div class="employee-info">
           <div class="head">Employee Info</div>
-          <div class="employee-info-box">
-            <h2>employee-info-box</h2>
-          </div>
+          <div class="employee-info-box"></div>
         </div>
       </main>
+
+      <div class="add-employee-main">
+        <form class="create-employee-form">
+          <div class="add-employee">
+            <input
+              type="text"
+              name="firstName"
+              required
+              placeholder="Enter first Name"
+            />
+            <input
+              type="text"
+              name="lastName"
+              required
+              placeholder="Enter Last Name"
+            />
+          </div>
+
+          <div class="add-employee">
+            <input
+              type="text"
+              name="imageUrl"
+              placeholder="Enter imageUrl (Optional)"
+            />
+          </div>
+          <div class="add-employee">
+            <input type="email" name="email" placeholder="Enter Email ID" />
+          </div>
+          <div class="add-employee">
+            <input
+              type="number"
+              name="contactNumber"
+              placeholder="Enter Contact Number"
+            />
+          </div>
+          <div class="add-employee">
+            <input
+              type="number"
+              name="salary"
+              placeholder="Enter Your Salary"
+            />
+          </div>
+          <div class="add-employee">
+            <input
+              type="text"
+              name="address"
+              placeholder="Enter Your address"
+            />
+          </div>
+          <div class="add-employee">
+            <input
+              class="dob-input"
+              type="number"
+              name="age"
+              placeholder="Enter Your Age"
+            />
+          </div>
+          <button class="add-employee-button">Add Employee</button>
+        </form>
+      </div>
     </div>
 
     <script src="main.js"></script>

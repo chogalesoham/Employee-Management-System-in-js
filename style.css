@@ -119,4 +119,150 @@ main {
 
 .employee-info .employee-info-box {
   padding: 20px 30px;
+  margin: 90px auto;
+}
+
+.employee-info-box {
+  width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.employee-info-box {
+  width: 350px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.employee-info-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.employee-info-box img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #4caf50;
+}
+
+/* Name and contact info styling */
+.employee-info-box p {
+  margin: 8px 0;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+}
+
+/* Age and salary styling */
+.employee-info-box div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #555;
+  margin-top: 12px;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Address styling */
+.employee-info-box p:last-child {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.5;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+
+.add-employee-main {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(3, 3, 3, 0.615);
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.add-employee-main form {
+  padding: 30px;
+  width: 40%;
+  height: 70%;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.add-employee {
+  width: 100%;
+  display: flex;
+  gap: 3px;
+}
+
+.add-employee input {
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+}
+
+.add-employee-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: orangered;
+  color: white;
+  font-size: 600;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.add-employee-button:hover {
+  background-color: black;
 }
